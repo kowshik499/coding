@@ -1,0 +1,13 @@
+def reverse_an_array(ls):
+    start = 0
+    end = len(ls)-1
+    while start<end:
+        ls[start],ls[end] = ls[end],ls[start]
+        start+=1
+        end-=1
+    return ls
+
+
+ls = list(map(int,input().split()))
+print(ls)
+print(reverse_an_array(ls))
